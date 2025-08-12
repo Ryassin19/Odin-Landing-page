@@ -9,7 +9,7 @@ h1{
     font-weight: 900;
 }
 
-p, .links, img{
+.subtext, .links, .mainpic{
     font-size: 18px;
     color: #e5e7eb;
 }
@@ -25,14 +25,24 @@ p, .links, img{
 
 .headerlogo{
     padding: 16px;
+    width: 10%;
 }
 
 .links{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 16px;
-    gap: 16px;
     width: 400px;
+}
+
+.links a{
+    text-decoration: none;
+    color: #F9FaF8;
+}
+
+.links a:hover{
+    color: rgb(17, 180, 88);
+    text-decoration: underline;
 }
 
 .topcontent{
@@ -62,3 +72,30 @@ button{
     color: white;
     font-size: 16px;
 }
+
+h2{
+    color:#1F2937;
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.pair{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 10%;
+}
+
+.pairs{
+    display: flex;  
+    justify-content: center;  
+    gap: 20px;
+}
+
+.pair img{
+    border-radius:16px;
+    height: 80px;
+    width: 100%;
+}
+
