@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer, main{
+    border: 5px solid red;
+}
+
+main{
+    flex: 1;
+}
+
+section{
+    border: 5px solid greenyellow;
+}
+
+.header-column, .footer-column, .inner-column{
+    border: 5px solid orange;
+}
