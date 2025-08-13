@@ -88,8 +88,8 @@ img{
     }
 }
 
-.welcome, header{
-    background-color: darkblue;
+.welcome, header, footer{
+    background-color: #1F2937;
     color: white;
 }
 
@@ -151,4 +151,36 @@ a{
     padding-bottom: 48px;
     font-weight: 800;
     margin-right: 40px;
+}
+
+.call-to-action .inner-column{
+    background-color: #3882f6;
+    color: white;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.calltext{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+button{
+    border: 2px solid white;
+    height: max-content;
+    padding: 5px 20px;
+}
+
+.calltext h3, .calltext p{
+    margin: 0;
+}
+
+footer .inner-column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
