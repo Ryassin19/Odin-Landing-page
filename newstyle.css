@@ -11,6 +11,16 @@ body{
     margin: 0;
 }
 
+h1{
+    font-size: 48px;
+    color: #F9FaF8;
+    font-weight: 900;
+}
+
+.headerlogo{
+    padding: 16px;
+    width: 10%;
+}
 
 main{
     flex: 1;
@@ -40,16 +50,21 @@ img{
 }
 
 .inner-column.header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-weight: 800;
-        gap: 20px;
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 800;
+    gap: 20px;
+}
 
 .links{
     display: flex;
     gap: 24px;
+}
+
+.links a:hover{
+    color: rgb(17, 180, 88);
+    text-decoration: underline;
 }
 
 .title-info{
@@ -59,9 +74,6 @@ img{
     align-items: flex-start;
 }
 
-.title-info p{
-    max-width: 50%;
-}
 
 @media (min-width: 700px){
 
@@ -94,6 +106,9 @@ img{
     .pairs{
         flex-wrap: wrap;
     }
+    .title-info p{
+    max-width: 100%;
+    } 
 }
 
 .welcome, header, footer{
