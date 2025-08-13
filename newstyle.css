@@ -1,3 +1,5 @@
+@import 'meyer-reset.css';
+
 *{
     box-sizing: border-box;
 }
@@ -20,6 +22,112 @@ section{
     border: 5px solid greenyellow;
 }
 
-.header-column, .footer-column, .inner-column{
+.inner-column{
     border: 5px solid orange;
+    max-width: 900px;
+    margin: auto;
+    padding: 10px;
+}
+
+button{
+    color: white;
+    font-size: 16px;
+    background-color: #3882f6;
+    border-radius: 4px;
+}
+
+picture{
+    display: block;
+}
+
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+ .inner-column.header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 800;
+        gap: 20px;
+    }
+
+@media (min-width: 700px){
+
+    .first-layer{
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+    }
+    
+    .first-layer .title-info, .first-layer picture{
+        flex-basis: 50%;
+        border: 2px solid blue;
+    }
+}
+
+@media (max-width: 700px){
+    .first-layer{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .inner-column picture{
+        max-width: 550px;
+    }
+}
+
+@media (max-width: 445px){
+    .pair{
+        flex-basis: 25%;
+    }
+    .pairs{
+        flex-wrap: wrap;
+    }
+}
+
+.welcome, header{
+    background-color: darkblue;
+    color: white;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.pairs{
+    display: flex;
+    gap: 16px;
+    border: 2px solid rgb(71, 71, 173);
+    padding: 5px;
+    align-items: stretch;
+}
+
+.pair{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid maroon;
+    width: 25%;
+}
+
+.pair p, .pair img{
+    border: 2px solid goldenrod;
+    margin: 0;
+    height: 100px;  
+    object-fit: cover;
+}
+
+.pair img{
+    flex: 3;
+}
+.pair p{
+    flex: 1;
+    padding: 5px;
+}
+
+.second-layer h2{
+    text-align: center;
 }
