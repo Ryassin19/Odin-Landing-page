@@ -101,7 +101,6 @@ a{
 .pairs{
     display: flex;
     gap: 16px;
-    border: 2px solid rgb(71, 71, 173);
     padding: 5px;
     align-items: stretch;
 }
@@ -109,12 +108,10 @@ a{
 .pair{
     display: flex;
     flex-direction: column;
-    border: 2px solid maroon;
     width: 25%;
 }
 
 .pair p, .pair img{
-    border: 2px solid goldenrod;
     margin: 0;
     height: 100px;  
     object-fit: cover;
@@ -122,6 +119,7 @@ a{
 
 .pair img{
     flex: 3;
+    border-radius: 6px;
 }
 .pair p{
     flex: 1;
@@ -130,4 +128,27 @@ a{
 
 .second-layer h2{
     text-align: center;
+}
+
+.quote{
+    background-color: #e5e7eb;
+}
+
+.quotetext{
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    padding: 48px 16px 16px;
+    margin: 16px 16px 0;
+}
+
+.author{
+    display: flex;
+    justify-content: flex-end;
+    margin: auto;
+    padding-bottom: 48px;
+    font-weight: 800;
+    margin-right: 40px;
 }
